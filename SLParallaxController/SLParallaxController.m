@@ -153,9 +153,9 @@
                          self.isShutterOpen = YES;
                          [self.tableView setScrollEnabled:NO];
                          // Center the user 's location
-                         [self zoomToUserLocation:self.mapView.userLocation
-                                      minLatitude:self.latitudeUserDown
-                                         animated:self.regionAnimated];
+//                         [self zoomToUserLocation:self.mapView.userLocation
+//                                      minLatitude:self.latitudeUserDown
+//                                         animated:self.regionAnimated];
 
                          // Inform the delegate
                          if([self.delegate respondsToSelector:@selector(didTableViewMoveDown)]){
@@ -181,9 +181,9 @@
                          [self.tableView setScrollEnabled:YES];
                          [self.tableView.tableHeaderView addGestureRecognizer:self.tapMapViewGesture];
                          // Center the user 's location
-                         [self zoomToUserLocation:self.mapView.userLocation
-                                      minLatitude:self.latitudeUserUp
-                                         animated:self.regionAnimated];
+//                         [self zoomToUserLocation:self.mapView.userLocation
+//                                      minLatitude:self.latitudeUserUp
+//                                         animated:self.regionAnimated];
 
                          // Inform the delegate
                          if([self.delegate respondsToSelector:@selector(didTableViewMoveUp)]){
