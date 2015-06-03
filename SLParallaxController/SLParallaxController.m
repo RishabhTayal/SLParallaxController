@@ -82,7 +82,7 @@
 }
 
 -(void)setupTableView{
-    self.tableView                  = [[UITableView alloc]  initWithFrame: CGRectMake(0, 20, SCREEN_WIDTH, self.heighTableView)];
+    self.tableView                  = [[UITableView alloc]  initWithFrame: CGRectMake(0, _default_Y_tableView, SCREEN_WIDTH, self.heighTableView)];
     self.tableView.tableHeaderView  = [[UIView alloc]       initWithFrame: CGRectMake(0.0, 0.0, self.view.frame.size.width, self.heighTableViewHeader)];
     [self.tableView setBackgroundColor:[UIColor clearColor]];
     
